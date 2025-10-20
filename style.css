@@ -1,1 +1,139 @@
-style.css
+/* GENERAL SETTINGS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  background-color: #1b1b1b;
+  color: #f4e1c1;
+  line-height: 1.6;
+}
+
+/* LINKS */
+a {
+  color: #2596be; /* green accent from logo */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3%;
+  background: rgba(27, 27, 27, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 50px;
+  margin-right: 0.5rem;
+}
+
+header nav a {
+  margin-left: 2rem;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+}
+
+/* HERO SECTION */
+#hero {
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f4e1c1;
+}
+
+#hero h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+#hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: #995315; /* coffee tone */
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  color: #f4e1c1;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #d17b39;
+}
+
+/* ABOUT SECTION */
+#about {
+  padding: 4rem 5%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #e6c79c;
+}
+
+/* CONTACT SECTION */
+#contact {
+  padding: 4rem 5%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e6c79c;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #141414;
+  color: #f4e1c1;
+  font-size: 0.9rem;
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav a {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  #hero h2 {
+    font-size: 2.2rem;
+  }
+}
